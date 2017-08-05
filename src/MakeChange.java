@@ -35,9 +35,9 @@ public static void main(String[] args) {
 	} //close main
 
 static void makeChange(double price, double tend) {
-	double [] denom = {2000.00, 1000.00, 500.00, 100.00, 20.00, 10.00, 5.00, 1.00, .25, .10, .05, 01}; //breakdown of currency
+	double [] denom = {100.00, 50.00, 20.00, 10.00, 5.00, 1.00, .25, .10, .05, .01}; //breakdown of currency
 	int [] count = new int[denom.length]; //array to capture number of bills/denomination
-	double total = 9553.61;
+	double total = 456.00;
 	
 	for(int i = 0; i < denom.length; i++ ) {
 		count[i] = (int)(total / denom[i]); //Gets # of bills per denomination
