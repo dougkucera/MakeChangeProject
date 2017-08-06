@@ -39,13 +39,9 @@ public class MakeChange {
 		for (int i = 0; i < denom.length; i++) {
 			if (chTot < denom[i]) {
 				chCnt[i] = 0;
-				// System.out.println("Denom: " + denom[i] + "\t\tCh Count: " + chCnt[i] + "\tCh
-				// remain: " + chTot);
 			} else {
 				chCnt[i] = (int) (chTot / denom[i]);
 				chTot = round((chTot % denom[i]), 2);
-				// System.out.println("Denom: " + denom[i] + "\t\tCh Count: " + chCnt[i] + "\tCh
-				// remain: " + chTot);
 			}
 		}
 		System.out.println("The price was $" + price + " and you gave me $" + tend);
@@ -71,4 +67,4 @@ public class MakeChange {
 		return bd.doubleValue();
 	}
 
-} // end
+} // close class
